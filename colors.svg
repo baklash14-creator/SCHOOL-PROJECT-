@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="640" height="420" fill="#ffffff"/>
+  <text x="24" y="38" font-size="22" font-weight="700" fill="#0a3f2b" font-family="Georgia, serif">Zulakiai School colours</text>
+
+  <rect x="24"  y="60" width="140" height="110" rx="12" fill="#0f5b3e"/>
+  <text x="36" y="132" font-size="14" font-weight="700" fill="#ffffff">Main green</text>
+  <text x="36" y="152" font-size="13" fill="#ffffff">#0f5b3e</text>
+
+  <rect x="180" y="60" width="140" height="110" rx="12" fill="#0a3f2b"/>
+  <text x="192" y="132" font-size="14" font-weight="700" fill="#ffffff">Dark green</text>
+  <text x="192" y="152" font-size="13" fill="#ffffff">#0a3f2b</text>
+
+  <rect x="336" y="60" width="140" height="110" rx="12" fill="#e0a82e"/>
+  <text x="348" y="132" font-size="14" font-weight="700" fill="#2b2100">Gold</text>
+  <text x="348" y="152" font-size="13" fill="#2b2100">#e0a82e</text>
+
+  <rect x="492" y="60" width="124" height="110" rx="12" fill="#1c2a24"/>
+  <text x="504" y="132" font-size="14" font-weight="700" fill="#ffffff">Text</text>
+  <text x="504" y="152" font-size="13" fill="#ffffff">#1c2a24</text>
+
+  <rect x="24"  y="190" width="140" height="110" rx="12" fill="#5d6b64"/>
+  <text x="36" y="262" font-size="14" font-weight="700" fill="#ffffff">Grey text</text>
+  <text x="36" y="282" font-size="13" fill="#ffffff">#5d6b64</text>
+
+  <rect x="180" y="190" width="140" height="110" rx="12" fill="#fbfaf6" stroke="#e6e2d6" stroke-width="2"/>
+  <text x="192" y="262" font-size="14" font-weight="700" fill="#1c2a24">Background</text>
+  <text x="192" y="282" font-size="13" fill="#1c2a24">#fbfaf6</text>
+
+  <rect x="336" y="190" width="140" height="110" rx="12" fill="#e6e2d6"/>
+  <text x="348" y="262" font-size="14" font-weight="700" fill="#1c2a24">Borders</text>
+  <text x="348" y="282" font-size="13" fill="#1c2a24">#e6e2d6</text>
+
+  <rect x="492" y="190" width="124" height="110" rx="12" fill="#e9f3ee"/>
+  <text x="504" y="262" font-size="14" font-weight="700" fill="#0f5b3e">Light green</text>
+  <text x="504" y="282" font-size="13" fill="#0f5b3e">#e9f3ee</text>
+
+  <text x="24" y="340" font-size="13" fill="#5d6b64">Change these in colors.css to recolour the whole website and admin panel.</text>
+  <rect x="24" y="356" width="150" height="42" rx="21" fill="#e0a82e"/>
+  <text x="99" y="382" font-size="15" font-weight="700" fill="#2b2100" text-anchor="middle">Apply now</text>
+  <rect x="190" y="356" width="150" height="42" rx="21" fill="#0f5b3e"/>
+  <text x="265" y="382" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Contact us</text>
+</svg>
