@@ -1,0 +1,15 @@
+/* Zulakiai School - colour file. Change these values to recolour the whole site and admin panel. */
+:root {
+  --green:   #0f5b3e;  /* main colour: buttons, hero, sidebar */
+  --green-d: #0a3f2b;  /* darker shade: headings, footer */
+  --gold:    #e0a82e;  /* accent colour */
+  --ink:     #1c2a24;  /* body text */
+  --muted:   #5d6b64;  /* secondary text */
+  --bg:      #fbfaf6;  /* page background */
+  --line:    #e6e2d6;  /* borders */
+}
+
+/* Other palettes - copy the values into :root above
+   Royal blue + orange: --green:#1d3f8a; --green-d:#122a5e; --gold:#f28c28; --ink:#162033; --muted:#5a6578; --bg:#f8fafc; --line:#dde3ee;
+   Maroon + gold:       --green:#7a1f2b; --green-d:#4f121b; --gold:#e2b04a; --ink:#2a1a1d; --muted:#6e5d60; --bg:#fcfaf8; --line:#eadfdc;
+*/
