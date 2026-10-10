@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Zulakiai Admin</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div id="loginView" class="login">
+  <form id="loginForm" class="login-card">
+    <div class="logo">Z</div>
+    <h1>Zulakiai Admin</h1>
+    <p class="muted" id="loginHint">Sign in to manage the school website.</p>
+    <label>Email<input id="email" type="email" required autocomplete="username"></label>
+    <label>Password<input id="password" type="password" required minlength="6" autocomplete="current-password"></label>
+    <button class="btn" type="submit" id="loginBtn">Sign in</button>
+    <button class="link" type="button" id="toggleMode">First time? Create the admin account</button>
+    <div id="loginMsg" class="msg"></div>
+    <a class="muted" href="index.html">← Back to website</a>
+  </form>
+</div>
+
+<div id="appView" hidden>
+  <aside class="side">
+    <div class="side-brand"><span class="logo">Z</span> Zulakiai</div>
+    <nav id="tabs"></nav>
+    <div class="side-foot">
+      <div class="muted small" id="whoami"></div>
+      <a href="index.html" target="_blank" class="small">View website ↗</a>
+      <button class="link" id="logoutBtn">Sign out</button>
+    </div>
+  </aside>
+  <main class="content">
+    <header class="bar">
+      <button id="sideBtn" class="menu">☰</button>
+      <h2 id="pageTitle"></h2>
+      <button class="btn" id="addBtn" hidden>+ Add new</button>
+    </header>
+    <div id="view"></div>
+  </main>
+</div>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card">
+    <div class="modal-head"><h3 id="modalTitle"></h3><button class="x" id="modalClose">✕</button></div>
+    <form id="modalForm"></form>
+  </div>
+</div>
+<div id="toast" class="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

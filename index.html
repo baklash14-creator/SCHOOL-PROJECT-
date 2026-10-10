@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zulakiai School</title>
+<meta name="description" content="Zulakiai School — news, events, programs and online admissions.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="setupBanner" class="setup-banner" hidden>Site not connected yet: add your Supabase URL and anon key in <b>config.js</b>.</div>
+
+<header class="top">
+  <div class="wrap nav">
+    <a href="#home" class="brand"><span class="logo">Z</span><span data-s="school_name">Zulakiai School</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <ul id="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#staff">Staff</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#admissions">Admissions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="kicker" style="color:var(--gold)">Welcome</div>
+    <h1 data-s="school_name">Zulakiai School</h1>
+    <p data-s="tagline">Learning today, leading tomorrow</p>
+    <div class="actions">
+      <a class="btn" href="#admissions">Apply for admission</a>
+      <a class="btn ghost" href="#about">Learn more</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="statPrograms">–</b>Programs</div>
+      <div class="stat"><b id="statStaff">–</b>Teachers &amp; staff</div>
+      <div class="stat"><b id="statEvents">–</b>Upcoming events</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">About us</div>
+      <h2 class="section-title">A school that feels like family</h2>
+      <p data-s="about"></p>
+      <h3 style="margin-top:1.4em">Our mission</h3>
+      <p data-s="mission"></p>
+    </div>
+    <div class="quote">
+      <h3>From the Principal</h3>
+      <p data-s="principal_message"></p>
+      <p><b data-s="principal_name"></b></p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="programs">
+  <div class="wrap">
+    <div class="kicker">Academics</div>
+    <h2 class="section-title">Our programs</h2>
+    <div class="grid" id="programsList"><p class="empty">Loading…</p></div>
+  </div>
+</section>
+
+<section id="news">
+  <div class="wrap">
+    <div class="kicker">Latest</div>
+    <h2 class="section-title">School news</h2>
+    <div class="grid" id="newsList"><p class="empty">Loading…</p></div>
+  </div>
+</section>
+
+<section class="alt" id="events">
+  <div class="wrap">
+    <div class="kicker">Calendar</div>
+    <h2 class="section-title">Upcoming events</h2>
+    <div class="grid" id="eventsList"><p class="empty">Loading…</p></div>
+  </div>
+</section>
+
+<section id="staff">
+  <div class="wrap">
+    <div class="kicker">Our people</div>
+    <h2 class="section-title">Teachers &amp; staff</h2>
+    <div class="grid" id="staffList"><p class="empty">Loading…</p></div>
+  </div>
+</section>
+
+<section class="alt" id="gallery">
+  <div class="wrap">
+    <div class="kicker">Moments</div>
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery" id="galleryList"><p class="empty">Loading…</p></div>
+  </div>
+</section>
+
+<section id="admissions">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">Join us</div>
+      <h2 class="section-title">Online admissions</h2>
+      <p class="lead">Fill in the form and our admissions office will contact you. Applications are reviewed in the order they arrive.</p>
+    </div>
+    <form class="f card pad" id="applyForm">
+      <div class="row">
+        <div><label for="a_student">Student full name *</label><input id="a_student" required minlength="2" maxlength="120"></div>
+        <div><label for="a_dob">Date of birth</label><input id="a_dob" type="date"></div>
+      </div>
+      <div class="row">
+        <div><label for="a_grade">Applying for *</label>
+          <select id="a_grade" required>
+            <option value="">Select…</option>
+            <option>Nursery / KG</option><option>Primary (Grades 1–6)</option>
+            <option>Junior Secondary (Grades 7–9)</option><option>Senior Secondary (Grades 10–12)</option>
+          </select></div>
+        <div><label for="a_prev">Previous school</label><input id="a_prev" maxlength="160"></div>
+      </div>
+      <div class="row">
+        <div><label for="a_parent">Parent / guardian name *</label><input id="a_parent" required minlength="2" maxlength="120"></div>
+        <div><label for="a_phone">Phone *</label><input id="a_phone" required minlength="5" maxlength="40" type="tel"></div>
+      </div>
+      <div class="row">
+        <div><label for="a_email">Email</label><input id="a_email" type="email" maxlength="160"></div>
+        <div><label for="a_addr">Address</label><input id="a_addr" maxlength="200"></div>
+      </div>
+      <div><label for="a_notes">Anything else we should know?</label><textarea id="a_notes" rows="3" maxlength="1500"></textarea></div>
+      <button class="btn green" type="submit">Submit application</button>
+      <div class="notice" id="applyNote"></div>
+    </form>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">Get in touch</div>
+      <h2 class="section-title">Contact us</h2>
+      <p><b>Address:</b> <span data-s="address">—</span></p>
+      <p><b>Phone:</b> <span data-s="phone">—</span></p>
+      <p><b>Email:</b> <span data-s="email">—</span></p>
+      <p id="socials"></p>
+    </div>
+    <form class="f card pad" id="contactForm">
+      <div class="row">
+        <div><label for="c_name">Your name *</label><input id="c_name" required minlength="2" maxlength="120"></div>
+        <div><label for="c_email">Email *</label><input id="c_email" type="email" required maxlength="160"></div>
+      </div>
+      <div><label for="c_subject">Subject</label><input id="c_subject" maxlength="160"></div>
+      <div><label for="c_msg">Message *</label><textarea id="c_msg" rows="4" required minlength="3" maxlength="4000"></textarea></div>
+      <button class="btn green" type="submit">Send message</button>
+      <div class="notice" id="contactNote"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div><b data-s="school_name">Zulakiai School</b><br><span data-s="tagline"></span></div>
+    <div>© <span id="yr"></span> <span data-s="school_name">Zulakiai School</span> · <a href="admin.html">Staff login</a></div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><img alt=""></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
